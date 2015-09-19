@@ -10,15 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var detailImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        detailImage.sd_setImageWithURL(NSURL(string: "http://www.123freevectors.com/wp-content/small/new/signs-symbols/042-Olympic%20Logo%20Vector%20Art%20Free-l.png"))
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 
 
 }
